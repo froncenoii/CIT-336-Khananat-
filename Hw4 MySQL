@@ -1,0 +1,112 @@
+-- phpMyAdmin SQL Dump
+-- version 4.8.5
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost:8889
+-- Generation Time: Apr 04, 2019 at 04:19 PM
+-- Server version: 5.7.25
+-- PHP Version: 7.3.1
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- Database: `MyTable1`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `Country`
+--
+
+CREATE TABLE `Country` (
+  `Country` varchar(255) NOT NULL,
+  `State` varchar(255) NOT NULL,
+  `town` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `Country`
+--
+
+INSERT INTO `Country` (`Country`, `State`, `town`) VALUES
+('country1', 'state1', 'state1'),
+('country2', 'state2', 'town2'),
+('country3', 'state3', 'town3'),
+('country4', 'state4', 'town4'),
+('country5', 'state5', 'town5'),
+('country6', 'state6', 'town6'),
+('country7', 'state7', 'town7'),
+('country8', 'state8', 'town8'),
+('country9', 'state9', 'town9'),
+('country10', 'state10', 'town10'),
+('country11', 'state11', 'town11'),
+('country12', 'state12', 'town12'),
+('country13', 'state13', 'town13'),
+('country14', 'state14', 'town14'),
+('country15', 'state15', 'town15');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `Food`
+--
+
+CREATE TABLE `Food` (
+  `Thai food` varchar(255) NOT NULL,
+  `Chinese food` varchar(255) NOT NULL,
+  `Italian food` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `Food`
+--
+
+INSERT INTO `Food` (`Thai food`, `Chinese food`, `Italian food`) VALUES
+('Thai1', 'Chinese1', 'Italian2'),
+('Thai2', 'Chinese2', 'Italian2'),
+('Thai3', 'Chinese3', 'Italian3'),
+('Thai4', 'Chinese4', 'Italian4'),
+('Thai5', 'Chinese5', 'Italian5'),
+('Thai6', 'Chinese7', 'Italian8'),
+('Thai9', 'Chinese9', 'Italian9'),
+('Thai10', 'Chinese10', 'Italian1'),
+('Thai11', 'Chinese11', 'Italian11'),
+('Thai12', 'Chinese12', 'Italian12'),
+('Thai13', 'Chinese13', 'Italian13'),
+('Thai14', 'Chinese14', 'Italian14'),
+('Thai15', 'Chinese15', 'Italian15');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `User`
+--
+
+CREATE TABLE `User` (
+  `Email` varchar(255) DEFAULT NULL,
+  `First` varchar(255) DEFAULT NULL,
+  `Last` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `User`
+--
+
+INSERT INTO `User` (`Email`, `First`, `Last`) VALUES
+('number1@mail.com', 'number1', 'last1'),
+('number2@mail.com', 'number2', 'last2'),
+('number3@mail.com', 'number3', 'last3'),
+('number4@mail.com', 'number4', 'last4'),
+('number5@mail.com', 'number5', 'last5'),
+('number6@mail.com', 'number6', 'last6'),
+('number7@mail.com', 'number7', 'last7'),
+('number8@mail.com', 'number8', 'last8'),
+('number9@mail.com', 'number9', 'last9'),
+('number10@mail.com', 'number10', 'last10'),
+('number11@mail.com', 'number11', 'last11'),
+('number12@mail.com', 'number12', 'last12'),
+('number13@mail.com', 'number13', 'last13'),
+('number14@mail.com', 'number14', 'last14'),
+('number15@mail.com', 'number15', 'last15');
